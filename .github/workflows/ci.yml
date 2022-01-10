@@ -23,9 +23,6 @@ jobs:
       - name: Deploy to staging
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain curvy-butter.surge.sh
-        env: 
+        env:
           SURGE_LOGIN: ${{secrets.SURGE_LOGIN}}
           SURGE_TOKEN: ${{secrets.SURGE_TOKEN}}
-
-
-
