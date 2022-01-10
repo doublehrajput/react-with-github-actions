@@ -31,9 +31,23 @@ jobs:
 
       - run: yarn test --coverage --watchAll=false
 
+      - name: Upload Test Coverage
+        uses: actions/upload-artifact@v1
+        with:
+          path: coverage
+          name: code-coverage
+
       - name: Build Project
         if: github.event_name == 'push'
         run: yarn run build
+
+      - name: Upload Build Folder
+        uses: actions/upload-artifact@v1
+        with:
+          path: build 
+          name: build
+
+      - uses: actions/download-artifact
 
       - name: Deploy to staging
         if: github.event_name == 'push'
