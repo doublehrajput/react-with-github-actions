@@ -1,0 +1,5 @@
+* @doublehrajput
+*.js @doublehrajput
+*.jsx @doublehrajput
+*.yml @doublehrajput
+/public @doublehrajput
