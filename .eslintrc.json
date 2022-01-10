@@ -20,20 +20,13 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": [
-  ],
+  "plugins": [],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "comma-dangle": "off",
     "eol-last": "error",
-    "indent": [
-      "error",
-      2
-    ],
-    "jsx-quotes": [
-      "warn",
-      "prefer-double"
-    ],
+    "indent": ["error", 2],
+    "jsx-quotes": ["warn", "prefer-double"],
     "max-len": [
       "warn",
       {
@@ -41,12 +34,9 @@
       }
     ],
     "no-console": "warn",
-   
+
     "no-unused-vars": "warn",
-    "object-curly-spacing": [
-      "warn",
-      "always"
-    ],
+    "object-curly-spacing": ["warn", "always"],
     "react/prop-types": "warn",
     "semi": "warn",
     "jest/no-focused-tests": "off",

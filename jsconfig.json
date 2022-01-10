@@ -4,24 +4,13 @@
     "strictFunctionTypes": true,
     "baseUrl": "./",
     "paths": {
-      "@app/*": [
-        "src/*"
-      ]
+      "@app/*": ["src/*"]
     },
     "moduleResolution": "node",
     "module": "ES6",
     "target": "ES6",
-    "lib": [
-      "DOM",
-      "ES5"
-    ]
+    "lib": ["DOM", "ES5"]
   },
-  "exclude": [
-    "./node_modules",
-    "./build",
-    "./public"
-  ],
-  "include": [
-    "./src/**/*"
-  ]
+  "exclude": ["./node_modules", "./build", "./public"],
+  "include": ["./src/**/*"]
 }
