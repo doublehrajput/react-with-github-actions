@@ -3,3 +3,4 @@
 *.jsx @doublehrajput
 *.yml @doublehrajput
 /public @doublehrajput
+/src @doublehrajput
