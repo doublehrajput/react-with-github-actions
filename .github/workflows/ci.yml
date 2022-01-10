@@ -43,8 +43,9 @@ jobs:
 
       - name: Upload Build Folder
         uses: actions/upload-artifact@v1
+        if: github.event_name == 'push'
         with:
-          path: build 
+          path: build
           name: build
 
       - uses: actions/download-artifact
