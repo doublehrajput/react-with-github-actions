@@ -48,12 +48,6 @@ jobs:
           path: build
           name: build
 
-      - uses: actions/download-artifact@v1
-        with:
-          name: my-artifact
-
-      - run: cat my-artifact
-
       - name: Deploy to staging
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain curvy-butter.surge.sh
